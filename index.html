@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customized Course Alert Messages</title>
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Customized Course Selection</h1>
+  <h5>Note: Enter 5 course names, and you will be able to edit them one by one.</h5>
+
+  <!-- Custom alert for course input -->
+  <div class="alert" id="courseAlert">
+    <div class="alert-content">
+      <span class="close-btn" onclick="closeAlert('courseAlert')">&times;</span>
+      <p>Enter the name for course <span id="courseNumber">1</span>:</p>
+      <input type="text" id="courseInput" placeholder="Course Name">
+      <button id="submit-btn" onclick="submitCourse()">Submit</button>
+    </div>
+  </div>
+
+  <!-- Custom alert for displaying selected courses -->
+  <div class="alert" id="displayAlert">
+    <div class="alert-content">
+      <p id="displayCourses">Courses will appear here after submission.</p>
+      <button class="edit-btn" onclick="editCourses()">Edit Courses</button>
+      <button class="ok-btn" onclick="finalizeSelection()">OK</button>
+    </div>
+  </div>
+
+  <!-- Custom alert for editing courses -->
+  <div class="alert" id="editAlert">
+    <div class="alert-content">
+      <span class="close-btn" onclick="closeAlert('editAlert')">&times;</span>
+      <p>Edit course <span id="editCourseNumber">1</span>:</p>
+      <input type="text" id="editCourseInput" placeholder="Course Name">
+      <button id="update-btn" onclick="submitEditedCourse()">Update</button>
+    </div>
+  </div>
+
+  <!-- Trigger the first alert to start the process -->
+  <button id="start-selection" onclick="showCourseInput()">Start Course Selection</button>
+
+  <script src="main18.js"></script>
+  <h4>Author: Azmat Ali</h4>
+</body>
+</html>

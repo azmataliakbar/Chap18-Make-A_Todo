@@ -1,0 +1,111 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: black;
+  text-align: center;
+}
+
+.alert {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.alert-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blanchedalmond; /* Change background color */
+  color: red; /* Change text color */
+  font-size: 35px; /* Adjust font size */
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#start-selection {
+  border-radius: 20px;
+  padding: 10px;
+  font: bold;
+  font-weight: bold;
+  background-color: lightblue;
+}
+.edit-btn, .ok-btn {
+  margin: 10px; /* Add some margin for spacing */
+  border-radius: 10px;
+}
+
+.ok-btn {
+  margin-top: 20px; /* Add extra space between the OK and Edit Courses button */
+  border-radius: 10px;
+}
+
+#submit-btn, #update-btn{
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+#courseInput, #editCourseInput {
+  margin-bottom: 15px; /* Adds gap between the input field and the button */
+  border-radius: 10px;
+}
+
+.close-btn {
+  color: rgb(103, 103, 248); /* Gray close button */
+  float: none;
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  color: rgb(247, 92, 115); /* Change color on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  color: rgb(107, 245, 107);
+  margin-top: 270px;
+  font-size: 300%;
+  font-weight: bold;
+}
+h4 {
+  color: yellow;
+}
+h5 {
+  color: white;
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 768px) {
+  h1 {
+    margin-top: 70px; /* Adjust the margin for mobile screens */
+    font-size: 250%; /* Smaller font size on mobile */
+  }
+  
+  .alert-content {
+    font-size: 25px; /* Smaller font size in alerts */
+  }
+
+  #start-selection {
+    padding: 15px;
+    font-size: 18px; /* Responsive button text size */
+  }
+
+  .edit-btn, .ok-btn {
+    font-size: 16px; /* Smaller button text */
+    padding: 8px 15px; /* Reduce padding for mobile */
+  }
+
+  #courseInput, #editCourseInput {
+    font-size: 16px;
+  }
+
+  .close-btn {
+    font-size: 30px;
+  }
+}
